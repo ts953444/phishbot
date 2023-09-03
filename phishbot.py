@@ -17,16 +17,14 @@ print(colors.YELLOW + "                /_/ ")
 
 recipient = input(colors.GREEN + 'Enter destination email address:\n' + colors.ENDC)
 
-print(recipient)
-
 gmail = Gmail()
 
 params = {
   "to": recipient,
   "sender": 'John Hacker <ts953444@gmail.com>',
   "subject": "Please helps!",
-  #"msg_html": "<h1>Woah, my first email!</h1><br />This is an HTML email.",
-  "msg_plain": "Hi\nThis is a plain text email.",
+  "msg_html": "<h1>Woah, my first email!</h1><br /><a href=http://3.19.16.86/>check this</a>This is an HTML email.",
+  #"msg_plain": "Hi\nThis is a plain text email.",
   #"attachments": ["path/to/something/cool.pdf", "path/to/image.jpg", "path/to/script.py"],
   "signature": True  # use my account signature
 }
